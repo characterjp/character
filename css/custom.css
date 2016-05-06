@@ -13587,10 +13587,10 @@ body.home section#how_it_works .tabs a {
     font-weight: bold
 }
 body.home section#how_it_works .tabs .active {
-    color: #1db5ab
+    color: #fc4f55
 }
 body.home section#how_it_works .tabs .indicator {
-    background-color: #1db5ab;
+    background-color: #fc4f55;
     height: 5px
 }
 body.home section#how_it_works p {
