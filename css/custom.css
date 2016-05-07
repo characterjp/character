@@ -13376,7 +13376,7 @@ header.headhesive.headhesive--stick {
     opacity: 1
 }
 header.headhesive.headhesive--stick nav {
-    background-color: #1db5ab
+    background-color: #fc4f55
 }
 header.headhesive.headhesive--unstick {
     visibility: hidden;
@@ -13620,61 +13620,71 @@ body.home section h2 {
     font-size: 3em;
     font-weight: 300
 }
-body.home section#facebook,
-body.home section#trust,
-body.home section#discover {
+body.home section#boast,
+body.home section#combination,
+body.home section#challenging,
+body.home section#creation {
     color: #5C5C5C
 }
 @media only screen and (max-width: 992px) {
-    body.home section#facebook h2,
-    body.home section#trust h2,
-    body.home section#discover h2 {
+    body.home section#boast h2,
+    body.home section#combination h2,
+    body.home section#challenging h2,
+    body.home section#creation h2 {
         font-size: 2em
     }
 }
-body.home section#facebook img,
-body.home section#trust img,
-body.home section#discover img {
+body.home section#boast img,
+body.home section#combination img,
+body.home section#challenging img,
+body.home section#creation img {
     display: block;
     margin-top: 40px
 }
-body.home section#facebook p,
-body.home section#trust p,
-body.home section#discover p {
+body.home section#boast p,
+body.home section#combination p,
+body.home section#challenging p,
+body.home section#creation p {
     line-height: 2em
 }
 @media only screen and (max-width: 992px) {
-    body.home section#facebook p,
-    body.home section#trust p,
-    body.home section#discover p {
+    body.home section#boast p,
+    body.home section#combination p,
+    body.home section#challenging p,
+    body.home section#creation p {
         font-size: 1em;
         line-height: 1.5em
     }
 }
 @media only screen and (max-width: 600px) {
-    body.home section#facebook p,
-    body.home section#trust p,
-    body.home section#discover p {
+    body.home section#boast p,
+    body.home section#combination p,
+    body.home section#challenging p,
+    body.home section#creation p {
         font-size: 1.15em;
         line-height: 1.5
     }
 }
-body.home section#facebook .row,
-body.home section#trust .row,
-body.home section#discover .row {
+body.home section#boast .row,
+body.home section#combination .row,
+body.home section#challenging .row,
+body.home section#creation .row {
     margin-bottom: 0
 }
-body.home section#facebook {
+body.home section#boast {
     background-color: #fff
 }
-body.home section#trust {
+body.home section#combination {
     background-color: #EDEDED
 }
-body.home section#discover {
+body.home section#challenging {
+    background-color: #EDEDED
+}
+body.home section#creation {
     background-color: #fff
 }
 body.home section#sign_up {
-    background-color: #EDEDED;
+    background-color: #fff;
     color: #5C5C5C;
     padding: 40px 0
 }
@@ -13768,3 +13778,4 @@ input[type=search] {
 .waves-effect.waves-aqua .waves-ripple {
     background-color: rgba(29, 181, 171, 0.65)
 }
+
