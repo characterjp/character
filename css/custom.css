@@ -13474,7 +13474,7 @@ body.home a.btn-floating {
     }
 }
 body.home .header_img {
-    background-image: url(//dcrft8y8615e6.cloudfront.net/assets/background-ba020ff1632649ead2284627e8200ef2.png);
+    background-image: url(https://raw.githubusercontent.com/characterjp/character/gh-pages/images/background2.png);
     background-position-x: center;
     background-position-y: bottom;
     background-size: cover;
