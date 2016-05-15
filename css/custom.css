@@ -9037,27 +9037,27 @@ nav .input-field label.active {
 }
 @font-face {
     font-family: "Roboto";
-    src: url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Thin-befad5d6c449c8383e67b6cec2c5438f.woff2) format("woff2"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Thin-46ee9b6a185b9b01fafb5b776c2a8243.woff) format("woff"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Thin-8e94126f55816db6793a42ec7f9dbebf.ttf) format("truetype");
+    src: url("https://github.com/characterjp/character/raw/gh-pages/fonts/KodomoRounded.otf");
     font-weight: 200
 }
 @font-face {
     font-family: "Roboto";
-    src: url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Light-ff60f7a769c6c3ee91bd5c66ec17a8f8.woff2) format("woff2"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Light-6385ff7b85b4cb97f97df9bec8a5c802.woff) format("woff"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Light-5309828d68e78b3e98b53bf9dd266ffa.ttf) format("truetype");
+    src: url("https://github.com/characterjp/character/raw/gh-pages/fonts/KodomoRounded.otf");
     font-weight: 300
 }
 @font-face {
     font-family: "Roboto";
-    src: url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Regular-bd33ced6648f3b7287f546f2a6a23462.woff2) format("woff2"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Regular-6399dc4235f9ad269cb170779fa3a84a.woff) format("woff"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Regular-92c81c9b6061afc4ce1288ceb5c05807.ttf) format("truetype");
+    src: url("https://github.com/characterjp/character/raw/gh-pages/fonts/KodomoRounded.otf");
     font-weight: 400
 }
 @font-face {
     font-family: "Roboto";
-    src: url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Medium-fe7ce4b2a7e8f0c0361f64445b6d759d.woff2) format("woff2"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Medium-71c733be7e7f3ef9d0d46a2df5bf5a20.woff) format("woff"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Medium-4a1f52a3082184178a4857287625246f.ttf) format("truetype");
+    src: url("https://github.com/characterjp/character/raw/gh-pages/fonts/KodomoRounded.otf");
     font-weight: 500
 }
 @font-face {
     font-family: "Roboto";
-    src: url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Bold-b2142aed2c3b1e92acfaa684dbea7e20.woff2) format("woff2"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Bold-4aa9203e6e0fb52a05472eac9ac7ba30.woff) format("woff"), url(//dcrft8y8615e6.cloudfront.net/assets/roboto/Roboto-Bold-1d0c8d90206b0e8d0a7631d34b5f7072.ttf) format("truetype");
+    src: url("https://github.com/characterjp/character/raw/gh-pages/fonts/KodomoRounded.otf");
     font-weight: 700
 }
 a {
