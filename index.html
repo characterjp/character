@@ -9,36 +9,24 @@
 <!--[if lt IE 8]><script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script><![endif]-->
 <title>Jumpr</title>
 <meta name="description" content="Jumpr is a service that connects riders to drivers with a similar goal – getting to their destination." />
-  
+
   <!--
   <link rel="stylesheet" media="all" href="css/style.css" data-turbolinks-track="true" />
   -->
-  
+
   <!-- ADD code by jangyoun -->
   <link rel="stylesheet" media="all" href="css/custom.css" data-turbolinks-track="true" />
-  <script src="js/custom.js" data-turbolinks-track="true"></script>
-  <script>
-  $(document).ready(function() {
-	$('ul.tabs').tabs();
-		var headerOptions = {
-			offset : "#how_it_works"
-		};
-
-		var header = new Headhesive(".header", headerOptions);
-	});
-  </script>
-  <!-- ADD code by jangyoun -->
-	
+	<!-- <link rel="stylesheet" media="all" href="css/materialize.css" data-turbolinks-track="true" /> -->
 </head>
 <body class="pages pages-show home">
-	
+
 	<header class="header">
 		<nav class="z-depth-0  main">
 			<div class="row">
 				<div class="col s12 l3 logo">
 					<a href="/"><img alt="Jumpr" class="responsive-img" src="https://dcrft8y8615e6.cloudfront.net/assets/logo_white-117eb4de9734d3b25a529f2e6cb4232e.png" /></a>
 				</div>
-				<div class="col l9 hide-on-med-and-down right-align desktop-nav">
+				<!-- <div class="col l9 hide-on-med-and-down right-align desktop-nav">
 					<ul class="right">
 						<li><a href="https://blog.jumpr.it">Blog</a></li>
 						<li><a href="#how_it_works">How It Works</a></li>
@@ -46,11 +34,11 @@
 						<li><a href="#sign_up">Sign Up</a></li>
 						<li><a class="modal-trigger" href="#feedback">Feedback</a></li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 		</nav>
 	</header>
-	
+
 	<div class="header_img">
 		<section id="hero">
 			<div class="container">
@@ -67,7 +55,7 @@
 			</div>
 		</section>
 	</div>
-	
+
 		<section id="creation">
 		<div class="container">
 			<div class="row hide-on-small-only valign-wrapper">
@@ -94,7 +82,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="combination">
 		<div class="container">
 			<div class="row hide-on-small-only valign-wrapper">
@@ -125,7 +113,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="boast">
 		<div class="container">
 			<div class="row hide-on-small-only valign-wrapper">
@@ -154,7 +142,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="challenging">
 		<div class="container">
 			<div class="row hide-on-small-only valign-wrapper">
@@ -185,28 +173,25 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="sign_up">
 		<div class="container center-align">
 			<div class="row">
 				<h2>Jumping Soon</h2>
 				<div class="col m6 s12 offset-m3">
-					<p>Jumpr is easy to use and designed to highlight the places
-						that you want to go.</p>
-					<form class="register" action="/leads" accept-charset="UTF-8"
-						data-remote="true" method="post">
-						<input name="utf8" type="hidden" value="&#x2713;" /><span
-							class="error hide">Please try that again.</span><input
-							type="email" name="email" id="email" value=""
-							placeholder="Email me when it&#39;s available"
-							required="required" /><input type="submit" name="commit"
-							value="Submit" />
-					</form>
+					<p>Jumpr is easy to use and designed to highlight the places that you want to go.</p>
+					<!-- <form class="register" accept-charset="UTF-8" data-remote="true">
+						<span class="error hide">Please try that again.</span>
+						<input type="email" name="email" id="email" value="" placeholder="Email address" required="required" />
+						<input type="submit" name="commit" value="Submit" data-target="feedback" />
+
+					</form> -->
+					<a class="modal-trigger waves-effect waves-light btn" href="#feedback">Email</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- <div class="modal" id="thank_you">
 		<div class="modal-content center-align">
 			<h4 class="center-align">We'll be in touch</h4>
@@ -224,27 +209,22 @@
 				thanks</a>
 		</div>
 	</div> -->
-	<!-- <div class="modal" id="feedback">
-		<form accept-charset="UTF-8"
-			action="https://formkeep.com/f/dda1d2cc7869" class="send_feedback"
-			method="POST">
+
+	<div class="modal" id="feedback">
+		<form>
 			<div class="modal-content center-align">
 				<h4 class="center-align">Your feedback</h4>
-				<p class="center-align">Do you have any cool ideas or
-					suggestions?</p>
-				<input name="utf8" type="hidden" value="✓" /><input name="email"
-					placeholder="Email address" required="true" type="email" />
+				<p class="center-align">Do you have any cool ideas or suggestions?</p>
+				<input name="email" placeholder="Email address" required="true" type="email" />
 				<textarea name="message" placeholder="Your message" required="true"></textarea>
-				<img class="hide"
-					src="https://dcrft8y8615e6.cloudfront.net/assets/heart-012ef8d88aa2b7ab3c3476d43e7145c4.png"
-					alt="Heart" />
 			</div>
 			<div class="modal-footer">
-				<button class="waves-effect btn-flat right" type="submit">Submit</button>
+				<a class="modal-action waves-effect waves-teal btn-flat" href="#">Submit</a>
+				<!-- <button class="waves-effect btn-flat right" type="submit">Submit</button> -->
 				<a class="modal-action modal-close waves-effect btn-flat" href="#!">Cancel</a>
 			</div>
 		</form>
-	</div> -->
+	</div>
 
 	<footer class="page-footer">
 		<div class="container">
@@ -280,5 +260,24 @@
 			</div>
 		</div>
 	</footer>
+
+  <!-- <script src="js/materialize.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/headhesive/1.2.4/headhesive.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.18/jquery.form-validator.min.js"></script> -->
+	<!-- <script src="js/custom.js" data-turbolinks-track="true"></script> -->
+	<script>
+	$(document).ready(function() {
+		var header = new Headhesive(".header");
+
+		$('a.modal-trigger').on('click', function(e){
+    	e.preventDefault();
+			$('#feedback').openModal();
+		});
+	});
+	</script>
+	<!-- ADD code by jangyoun -->
+
 </body>
 </html>
