@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Jumpr</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="css/custom.css" />
+		<script src="js/custom.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<section>
+					<div class="wizard">
+
+						<ul class="nav nav-wizard">
+
+							<li class="active">
+								<a href="#step1" data-toggle="tab">Billing Details</a>
+							</li>
+
+							<li class="disabled">
+								<a href="#step2" data-toggle="tab">Delivery Method</a>
+							</li>
+
+							<li class="disabled">
+								<a href="#step3" data-toggle="tab">Payment Method</a>
+							</li>
+						</ul>
+
+						<form>
+							<div class="tab-content">
+								<div class="tab-pane active" id="step1">
+									<h3>Step 1</h3>
+									<p>
+										</br>
+										<div>
+											<label >Name</label>
+											<input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />
+										</div>
+										</br>
+										<div >
+											<label >Email</label>
+											<input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
+										</div>
+										</br>
+										<div >
+											<label >Phone (Optional)</label>
+											<input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
+										</div>
+										</br>
+										<div>
+											<label>Address</label>
+											<textarea required="required" class="form-control" placeholder="Enter your address" ></textarea>
+										</div>
+									</p>
+									<ul class="list-inline pull-right">
+										<li>
+											<button type="button" class="btn btn-primary">
+												Continue
+											</button>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane" id="step2">
+									<h3>Step 2</h3>
+									<p>
+										</br>
+										<div>
+											<label>Address</label>
+											<textarea readonly class="form-control" rows="10">asdfadfadfsfadfasdfadfadfsfadfasdfadfafasdfadfadfsfadfasdfadfafasdfadfadfsfadfasdfadfafasdfadfadfsfadfasdfadfafasdfadfaf</textarea>
+											<input type="radio" name="chk_info" value="HTML">
+											HTML
+											<input type="radio" name="chk_info" value="CSS">
+											CSS
+										</div>
+									</p>
+									<ul class="list-inline pull-right">
+										<li>
+											<button type="button" class="btn btn-primary">
+												Continue
+											</button>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane" id="step3">
+									<h3>Complete</h3>
+									<p>
+										You have successfully completed all steps.
+									</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
