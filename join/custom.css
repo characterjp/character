@@ -2,7 +2,7 @@ body{
     margin: 20px auto;
 }
 textarea {
-        text-align: justify;
+        text-align: left;
         white-space: normal;
 }
 ul.nav-wizard {
