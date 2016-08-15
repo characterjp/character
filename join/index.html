@@ -58,17 +58,17 @@
 										<br/>
 										<div class="form-group">
 											<label >名前 (必須)</label>
-											<input type="email" id="email" name="email" required placeholder="契約手続き上必要です。 本名を記載してください" />
+											<input type="text" id="name" placeholder="契約手続き上必要です。 本名を記載してください" />
 										</div>
 										<br/>
 										<div >
 											<label >メール (必須)</label>
-											<input type="text" id="name" required data-rule-required="true" required class="form-control" placeholder="受信可能なメールアドレスを入力してください。" />
+											<input type="text" id="email" class="form-control" placeholder="受信可能なメールアドレスを入力してください。" />
 										</div>
 										<br/>
 										<div >
 											<label >携帯電話</label>
-											<input type="text" id="phone" required="required" class="form-control" placeholder="受信することができた携帯番号を記入してください。" />
+											<input type="text" id="phone" class="form-control" placeholder="受信することができた携帯番号を記入してください。" />
 										</div>
 									</p>
 									<ul class="list-inline pull-right">
@@ -194,27 +194,13 @@
 		<!-- jQuery library -->
 		<!-- <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.js"></script>
-		<script src="custom.js" ></script>
+		<script src="../js/bootstrap.min.js"></script>
 		<script src="../js/materialize.min.js"></script>
+		<script src="custom.js" ></script>
 		<script>
 		$(document).ready(function() {
 			$('#firstStepBtn').on('click', function(event) {
 				event.preventDefault();
-				var $email = $('#email');
-				if (!$email.val()) {
-					alert('이메일을 입력하세요');
-					$email.css('border-bottom', '2px solid #ff0000');
-					return;
-				}
-
-				if (!validateEmail($email.val())) {
-					alert('이메일 형식에 맞게 입력하세요.');
-					$email.css('border-bottom', '2px solid #ff0000');
-					return;
-				}
-				$email.css('border-bottom', '1px solid #9e9e9e');
-
 				var $name = $('#name');
 				if (!$name.val()) {
 					alert('이름을 입력하세요');
@@ -229,6 +215,20 @@
 				}
 
 				$name.css('border-bottom', '1px solid #9e9e9e');
+
+				var $email = $('#email');
+				if (!$email.val()) {
+					alert('이메일을 입력하세요');
+					$email.css('border-bottom', '2px solid #ff0000');
+					return;
+				}
+
+				if (!validateEmail($email.val())) {
+					alert('이메일 형식에 맞게 입력하세요.');
+					$email.css('border-bottom', '2px solid #ff0000');
+					return;
+				}
+				$email.css('border-bottom', '1px solid #9e9e9e');
 
 				var $active = $('.wizard .nav-wizard li.active');
 				$active.next().removeClass('disabled');
