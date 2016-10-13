@@ -58,7 +58,7 @@
 										<br/>
 										<div class="form-group">
 											<label >名前 (必須)</label>
-											<input type="text" id="name" placeholder="契約手続き上必要です。 本名を記載してください" />
+											<input type="text" id="name" placeholder="契約手続き上必要です。 本名を記載してください。" />
 										</div>
 										<br/>
 										<div >
@@ -68,7 +68,7 @@
 										<br/>
 										<div >
 											<label >携帯電話</label>
-											<input type="text" id="phone" class="form-control" placeholder="受信することができた携帯番号を記入してください。" />
+											<input type="text" id="phone" class="form-control" placeholder="受信可能な携帯番号を記入してください。" />
 										</div>
 									</p>
 									<ul class="list-inline pull-right">
@@ -173,14 +173,13 @@
 								<div class="tab-pane" id="step3">
 									<h3>ありがとうございます。</h3>
 									<p>
-										作家！キャラテンと一緒にいただきありがとうございます。
+										作家！キャラテンと一緒にすることを決めていただきありがとうございます。
 										<br/><br/>
-										優れたプラットフォームになることができるよう、作家様に役立つことができるよう努力します。
+										優れたプラットフォームになれるよう、作家様に約立てるようもっと頑張ります。
 										<br/><br/>
-										契約関連して、収益を送ってささげるために、口座またはpaypalアカウント情報を要求する連絡をいたします。
+										契約に関して、 収益の送金のため、口座またはPaypalアカウント情報が必要となります。
 										<br/><br/>
-										気になる点ございましたら、いつでもhelp@kyaraten.comにお問い合わせください。
-
+										気になる点ございましたら、いつでも気軽くhelp@kyaraten.comに声をかけて下さい。
 									</p>
 								</div>
 								<div class="clearfix"></div>
@@ -203,13 +202,13 @@
 				event.preventDefault();
 				var $name = $('#name');
 				if (!$name.val()) {
-					alert('이름을 입력하세요');
+					alert('名前を入力して下さい。');
 					$name.css('border-bottom', '2px solid #ff0000');
 					return;
 				}
 
 				if ($name.val().length >= 10) {
-					alert('이름은 10글자 이하로 입력하세요');
+					alert('名前は１０文字以下で入力して下さい。');
 					$name.css('border-bottom', '2px solid #ff0000');
 					return;
 				}
@@ -218,13 +217,13 @@
 
 				var $email = $('#email');
 				if (!$email.val()) {
-					alert('이메일을 입력하세요');
+					alert('メールアドレスを入力して下さい。');
 					$email.css('border-bottom', '2px solid #ff0000');
 					return;
 				}
 
 				if (!validateEmail($email.val())) {
-					alert('이메일 형식에 맞게 입력하세요.');
+					alert('メールアドレスの形式に合せて入力して下さい。');
 					$email.css('border-bottom', '2px solid #ff0000');
 					return;
 				}
@@ -243,12 +242,12 @@
 				event.preventDefault();
 			  var checked = $('input[name="group1"]:checked').val()
 				if (!checked) {
-					alert('동의 및 비동의를 선택하세요.');
+					alert('同意・非同意を選んで下さい。');
 					return;
 				}
 
 				if (checked === 'disagree') {
-					alert('비동의를 선택하신 경우 진행할 수 없습니다.');
+					alert('非同意の場合、前に進行することができません。');
 					return;
 				}
 
@@ -270,7 +269,7 @@
 						Materialize.toast('Sending email is failed. please retry it.', 3000, 'rounded')
 					},
 					success: function(e){
-						Materialize.toast('Sending email is success!.', 3000, 'rounded')
+						Materialize.toast('メールの送信が完了しました。', 3000, 'rounded')
 					}
 				});
 			});
