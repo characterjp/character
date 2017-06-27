@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -56,7 +56,7 @@ body :-ms-input-placeholder {
 .container {
   max-width: 600px;
   margin: 0% auto;
-  padding: 0 auto;
+  padding: 0px auto;
   height: 400px;
   text-align: center;
 }
@@ -210,3 +210,6 @@ form button:hover {
     transform: translateY(-700px) rotate(600deg);
   }
 }
+
+
+
