@@ -263,7 +263,7 @@ h3 {
     padding: 20px;
     width: 100%;
     display: inline-flex;
-    z-index: 1;
+    z-index: 9;
 }
 
 #section9 .footer .footer_logo div {
@@ -328,7 +328,7 @@ h3 {
     bottom: 90px;
     left: 0;
     height: 0px;
-    z-index: 70;
+    z-index: 7;
     width: 100%;
     padding: 25px;
     margin: 0px;
@@ -402,7 +402,7 @@ div.modal-body {
         left: calc(50% - 250px);
         width: 200px;
         bottom: 80px;
-        z-index: 1;
+        z-index: 9;
     }
     #section9 .footer .footer_logo img,
     #section9 .footer .footer_logo div {
