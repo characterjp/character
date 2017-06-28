@@ -5,9 +5,14 @@
 			,wrongMail:"メールアドレスは半角英数字で入力してください"
 			,success:"送信完了"
 			,error:"正しく入力されていない項目があります。もう一度ご入力ください。"
+			,ready:"準備中です"
 		}
 
 		$(document).ready(function() {
+
+			$("a#readyBtn").on("click",function(){
+				modalPop(msg.ready);
+			});
 
 			$("#saveBtn").on("click",function(){
 				$("#sendForm").submit();
@@ -25,15 +30,6 @@
 					,mail : {required: msg.emptyMail,email : msg.wrongMail}
 
 				},
-				// message : {
-				// 	 name : {required : msg.emptyName}
-				// 	,mail : {required : msg.emptyMail, email : msg.wrongMail}
-				// },
-
-				// errorPlacement:function(error,element){
-				// 	error.appendTo( element.closest("fieldset").next("div#errorMsg"));
-				// },
-
 				submitHandler: function() {
 					sendData();
 				},
@@ -50,9 +46,7 @@
 			$("h1#s5").fitText(1.2,{ minFontSize: '40px', maxFontSize: '60px' });
 			$("span#s6").fitText(1,{ minFontSize: '25px', maxFontSize: '45px' });
 			$("h3#s6").fitText(1.8,{ minFontSize: '18px', maxFontSize: '35px' });
-			$("h3#s7").fitText(1,{ minFontSize: '20px', maxFontSize: '35px' });
-
-
+			$("h3#s7").fitText(1.5,{ minFontSize: '20px', maxFontSize: '45px' });
 		});	//document.ready End
 
 		function sendData(){
@@ -75,5 +69,10 @@
 					$("#bs-example-modal-lg").modal("toggle");
 				}
 			});
+		}
 
+		function modalPop(msg){
+			$("div#modalMsg").text(msg);
+			$("div#modalMsg").css("color","#000000");
+			$("#bs-example-modal-lg").modal("toggle");
 		}

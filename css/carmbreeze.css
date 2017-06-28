@@ -85,7 +85,7 @@ form input {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.2);
   /*width: 250px;*/
-  width: 90%;
+  width: 100%;
   border-radius: 3px;
   padding: 10px 15px;
   margin: 0 auto 10px auto;
@@ -115,7 +115,7 @@ form button {
   color: #ACD7F5;
   border-radius: 3px;
   /*width: 250px;*/
-  width: 90%;
+  width: 100%;
   cursor: pointer;
   font-size: 18px;
   transition-duration: 0.25s;
