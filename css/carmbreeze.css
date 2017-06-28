@@ -37,11 +37,19 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapper {
-  background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  /*background: #50a3a2;*/
+  background: #D8D8D8;
+
+  /*background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
   background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
   background: -o-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);*/
+
+  background: -webkit-linear-gradient(top left, #ACD7F5 0%, #ACD7F5 100%);
+  background: -moz-linear-gradient(top left, #ACD7F5 0%, #ACD7F5 100%);
+  background: -o-linear-gradient(top left, #ACD7F5 0%, #ACD7F5 100%);
+  background: linear-gradient(to bottom right, #ACD7F5 0%, #ACD7F5 100%);
+
   position: absolute;
   top: 0%;
   left: 0;
@@ -103,7 +111,8 @@ form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
-  color: #53e3a6;
+  /*color: #53e3a6;*/
+  color: #ACD7F5;
   border-radius: 3px;
   /*width: 250px;*/
   width: 90%;

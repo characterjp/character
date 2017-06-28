@@ -43,17 +43,17 @@
 			</h3>
 		</div>
 		<div class="section" id="section5">
-			<h1 id="s5">でも…楽しみ方はそれだけじゃない！</h1>
+			<h1 id="s5">でも…<br/>楽しみ方はそれだけじゃない！</h1>
 		</div>
 		<div class="section" id="section6">
 			<div class="div_table">
 				<h3 id="s6" class="div_cell">
 					<span id="s6" style="text-decoration: underline;">ポイント１</span><br/>
 					<p>他のユーザーとつながろう！<br/>
-					キャラクターのコラボが楽しめる</p><br/>
+					キャラクターのコラボが楽しめる</p>
 					<span id="s6" style="text-decoration: underline;">ポイント２</span><br/>
 					<p>アニメーションスタンプも対応<br/>　
-					動くキャラクターでも天気予報を楽しもう</p><br/>
+					動くキャラクターでも天気予報を楽しもう</p>
 					<span id="s6" style="text-decoration: underline;">ポイント３</span><br/>
 					<p>スタンプ・アニメーションスタンプの販売で<br/>　
 					目指せ人気クリエイター！！</p>
@@ -61,13 +61,25 @@
 			</div>
 		</div>
 		<div class="section" id="section7">
-			<div>
-				<h3 id="s7">キャラ天公式アカウントを登録をして、一足先に体験してみよう！</h3>
-				<div class="align-right" style="padding: 50px 40px;">
-					<a href="https://line.me/R/ti/p/%40imc9890m">
-						<img height="40" border="0" alt="친구추가" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png">
-					</a>
+			<div class="container_s7 div_table">
+				<div class="s7_space div_tr"></div>
+				<div class="div_tr">
+					<h3 id="s7">キャラ天公式アカウントを登録をして<br/>、一足先に体験してみよう！</h3>
 				</div>
+				<div class="div_tr">
+					<div class="s7_item div_td">
+						<div class="s7_logo">
+							<a href=""><img src="./img/item07_01.png" alt=""></a>
+							<a href=""><img src="./img/item07_02.png" alt=""></a>
+						</div>
+						<div class="s7_logo_line">
+							<a href="https://line.me/R/ti/p/%40imc9890m" target="_blank">
+								<img height="40" border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="s7_space div_tr"></div>
 			</div>
 		</div>
 		<div class="section" id="section8">
@@ -111,40 +123,35 @@
 						<a href="mailto:help@kyaraten.com">help@kyaraten.com</a>
 					</div>
 				</div>
+				<!--
 				<ul class="bg-bubbles">
 					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 				</ul>
-<!--
-				<div class="footer" style="height:10%;">
+				 -->
+				<div class="footer">
 					<div class="footer-inner">
+
+						<!-- <div class="footer_logo">
+							<div><a href=""><img src="./img/ameba.png" alt=""></a></div>
+							<div><a href=""><img src="./img/instagram.png" alt=""></a></div>
+							<div><a href=""><img src="./img/facebook.png" alt=""></a></div>
+						</div> -->
+
 						<div class="footer-content">
 							<span class="bigger-120">
-								<span id="footer_cop" class="blue bolder">LISTEN</span><span id="footer_cop" class="bolder">SOFT © 2017</span>
+								<span id="footer_cop" class="blue bolder">LISTEN</span><span id="footer_cop" class="grey bolder">SOFT © 2017</span>
 							</span>
 						</div>
 					</div>
 				</div>
-				 -->
 			</div>
 		</div>
 		<ul id="menu" class="menu">
-			<li data-menuanchor="page1" class="active">
-				<a href="#page1">
-					<span id="moveBtn" class="bolder">上へ</span>
-				</a>
-			</li>
 			<li data-menuanchor="page9">
 				<a href="#page9">
-					<span id="moveBtn" class="bolder">下へ</span>
+					<span id="moveBtn" class="bolder">事前登録<br/>ページ</span>
 				</a>
 			</li>
-			<!--
-			<li data-menuanchor="page9">
-				<a href="#page9">
-					<span id="moveBtn" class="bolder">사전등록<br/>바로가기</span>
-				</a>
-			</li>
- -->
 		</ul>
 	</div>
 	<!-- modal -->
@@ -176,9 +183,9 @@
 				,scrollBar:true
 				,afterLoad: function(anchorLink, index){
 					//https://kyaraten.github.io/intro/
-					ga('create', 'UA-101489793-2', 'auto');
+					//ga('create', 'UA-101489793-2', 'auto');
 					//http://kyaraten.com
-					//ga('create', 'UA-101489793-1', 'auto');
+					ga('create', 'UA-101489793-1', 'auto');
 					ga('send', 'pageview', { 'page': anchorLink, 'title': anchorLink });
 				}
 			});
